@@ -14,12 +14,15 @@ sh addhost.sh
 
 ## HELP
 read -p "Enter username : " username 
+
 Put your linux ou machine name like ubuntu or root. In case of using wordpress use the user: www-data
 
 read -p "Enter pathname : " path
+
 path will be the name of the .conf files and the directory where the files are located
 
 read -p "Enter domain name : " domain
+
 domain like example.com (no need pass www) 
 
 to add the www domain uncomment this field:
