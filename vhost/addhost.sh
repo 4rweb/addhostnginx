@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 #
-# Nginx - new server block  /// username: www-data //receitadevidadev //receitadevidadev.floatserver.ga
-# rm -rf /usr/share/nginx/sites/receitadevidadev rm -rf /etc/nginx/sites-enabled/receitadevidadev rm -rf /etc/nginx/sites-available/receitadevidadev
+# Nginx - new server block 
 
 read -p "Enter username : " username
 read -p "Enter pathname : " path
@@ -174,7 +173,9 @@ EOF
 # Creating {public,log and copy errors directories} directories
 mkdir -p $WEB_DIR/$path/www
 mkdir -p $WEB_DIR/$path/logs
-cp -r $WEB_DIR/errors $WEB_DIR/$path/www/
+
+## create erro pages before run this
+## cp -r $WEB_DIR/errors $WEB_DIR/$path/www/
 
 # Creating index.html file
 cat > $WEB_DIR/$path/www/index.html <<EOF
