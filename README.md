@@ -30,7 +30,7 @@ domain like example.com (no need pass www)
 
 to add the www domain uncomment this field:
 ```
-## with www: server_name $domain www.$domain
+-- www: server_name $domain www.$domain
 ```
 
 at the end of the file performs the checks and updates the nginx service
